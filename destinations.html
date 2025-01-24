@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Oceana</a>
+
+          <!-- collapse is hamburger button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+           
+            </ul>
+           
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+      </nav>
+
+<!-- TABLE -->
+ <div class="container-md mb-5">
+  <h2 ca\lass="text-center pb-5">explore our destinations</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Hotel Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Phone Number</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        <!-- Each corresponds to the above: hotel, location, phone number -->
+      <tr>
+        <td>Oceana Paradise</td>
+        <td>Fort Myers, FL</td>
+        <td>515-555-1234</td>
+      </tr>
+ 
+      <tr>
+        <td>Oceana Midwest Paradise</td>
+        <td>Waterloo, IA</td>
+        <td>319-555-1234</td>
+      </tr>
+   
+      <tr>
+        <td>Oceana Hot Springs</td>
+        <td>Colorado Springs, CO</td>
+        <td>641-555-1234</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</div>
+
+<footer class="pt-2 pb-2">
+  <div class="text-center p-2">
+    <h5>Oceana Resort 2025</h5>
+  </div>
+  </footer>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -4,12 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Oceana</a>
+
+          <!-- collapse is hamburger button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+           
+            </ul>
+           
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+      </nav>
+
+<!-- HERO -->
+ <div>
+<img class="img-fluid" src="hotelssss/seven-mile-beach-cayman-islands-m.jpg" alt="beautiful view">
+</div>
+
+<!-- WELCOME -->
+
+<!-- centering text and giving it padding to space it from the image -->
+<!-- changing alignment, padding, and font side for the following -->
+
+<h1 class="text-center p-2">your vacation. your way. </h1>
+
+<p class="text-center p-2 fs 5">whether you prefer the mountains, the beach, or the midwest valley, Oceana Resorts has the destination for you.
+</p>
+
+<p class="text-center p-2 fs 5">
+  book your stay today and experience the Oceana difference.
+</p>
+
+
+<!-- CARDS -->
+<!-- stack vertically when screen is small and horizontally when big -->
+ <!-- grid. responsive makes it stack. small columns -->
+  <!-- gutter, margin, padding -->
+
+ <div class="container text-center">
+  <div class="row row-cols-1 row-cols-lg-3 g-3 m-3 pt-5">
+
+    <div class="col">
+      <div class="card h-100 shadow-lg">
+        <img src="hotelssss/outsideviews.avif" class="card-img-top" alt="pretty beach view">
+        <div class="card-body">
+          <h5 class="card-title">world class views</h5>
+          <p class="card-text fs-5">beach. mountain. valley. your choice.</p>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-lg">
+        <img src="hotelssss/room1.avif" class="card-img-top" alt="room example">
+        <div class="card-body">
+          <h5 class="card-title">luxury suites</h5>
+          <p class="card-text fs-5">whether you're on a romantic getaway or with the whole family, we have the room for you</p>
+          
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-lg">
+        <img src="hotelssss/cover.avif" class="card-img-top" alt="beautiful view">
+        <div class="card-body">
+          <h5 class="card-title">relax</h5>
+          <p class="card-text fs-5">this is your vacation and we're here to make it special. choose from a wide variety of amenities to make your stay memorable</p>
+          
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+<!-- PICTURE DIV -->
+ <!-- tell it how much to take up per cell -->
+  <!-- margin top, bottom, and padding bottom -->
+
+
+<div class="container text-center mt-1 mb-1 pb-1">
+  <div class="m-3 p-5 photo--grid">
+  <div class="row gx-0 g-0">
+    <div class="col-sm-4">
+      <img class="img-fluid" src="hotelssss/istockphoto-1418031578-612x612.webp" alt="Oceana lobby" width="400" height="400">
+    </div>
+    <div class="col-sm-4">
+      <img class="img-fluid" src="hotelssss/room2.avif" alt="pretty view" width="400" height="400">
+    </div>
+    <div class="col-sm-4">
+      <img class="img-fluid" src="hotelssss/helpfulstaff.webp" alt="Oceana staff" width="400" height="400">
+    </div>
    
-    <button class="btn btn-primary">Test</button>
+  </div>
+</div>
+</div>
+
+<hr class="border border-secondary border-1 opacity-50">
+
+<!-- IMG VIEW ALL LOCATIONS -->
+ <div class-="container g-3 mb-5 ms-3 me-3 p-3">
+    <div class="card text-bg-dark">
+
+      <!-- anchor to bring to another page -->
+       <a href="destinations.html">
+  <img src="hotelssss/istockphoto-175242999-612x612.webp" class="card-img image-fluid" " alt="mountain view" width="400">
+  <div class="card-img-overlay">
+    <h3 class="card-title">view all locations</h3>
+    <p class="card-text fs-4">rest and relax all around the world</p>
+  </div>
+  </a>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+ <h1 class="text-center mt-5 pt-5">contact us</h1>
+ <h2 class="text-center mb-4">book your stay today</h2>
+
+ <!-- margin start 3 margin end 3 for spacing -->
+
+<form class="row g-3 mb-5 ms-3 me-3 p-3">
+
+<!-- give more room on sides with a container -->
+<div class="container">
+
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label for="firstname" class="form-label">First name</label>
+      <input type="text" class="form-control" aria-label="First name" id="firstname">
+    </div>
+    <div class="col-md-6">
+      <label for="lastname" class="form-label">Last name</label>
+      <input type="text" class="form-control" aria-label="Last name" id="lastname">
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-12">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+
+<!-- FORM -->
+<footer class="pt-2 pb-2">
+<div class="text-center p-2">
+  <h5>Oceana Resort 2025</h5>
+</div>
+</footer>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
